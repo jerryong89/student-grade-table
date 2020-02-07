@@ -31,28 +31,41 @@
         </thead>
         <tbody>
         </tbody>
-        </table>
-        <div class="col-4">
-          <form>
-            <div class="form-group">
-              <input type="name" class="form-control" placeholder="Name">
+      </table>
+      <div class="col-4">
+        <form>
+          <h3>
+          <label for="addgrade">Add Grade</label>
+          </h3>
+          <div class="input-group mb-3">
+            <div class="input-group-prepend">
+              <span class="input-group-text" id="basic-addon1">@</span>
             </div>
-            <div class="form-group">
-              <input type="course" class="form-control" placeholder="Course">
+            <input type="name" class="form-control" placeholder="Name" aria-label="Username" aria-describedby="basic-addon1">
+          </div>
+          <div class="input-group mb-3">
+            <div class="input-group-prepend">
+              <span class="input-group-text" id="basic-addon1">@</span>
             </div>
-            <div class="form-group">
-              <input type="password" class="form-control" placeholder="Grade">
+            <input type="course" class="form-control" placeholder="Course" aria-label="Username" aria-describedby="basic-addon1">
+          </div>
+          <div class="input-group mb-3">
+            <div class="input-group-prepend">
+              <span class="input-group-text" id="basic-addon1">@</span>
             </div>
-            <button type="submit" class="btn btn-primary">Add</button>
-            <button type="reset" class="btn btn-primary">Cancel</button>
-          </form>
-        </div>
+            <input type="grade" class="form-control" placeholder="Grade" aria-label="Username" aria-describedby="basic-addon1">
+          </div>
+            <button type="submit" class="btn btn-success">Add</button>
+            <button type="reset" class="btn btn-outline-secondary">Cancel</button>
+        </form>
+      </div>
     </div>
   </div>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.js"></script>
   <script src="components/app.js"></script>
   <script src="components/grade-table.js"></script>
   <script src="components/page-header.js"></script>
+  <script src="components/grade-form.js"></script>
   <script src="components/main.js"></script>
 </body>
 
