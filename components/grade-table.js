@@ -3,6 +3,7 @@ class GradeTable {
     this.tableElement = tableElement;
   }
   updateGrades(grades) {
+    $("tbody").empty();
     for (var i = 0; i < grades.length; i++) {
       var row = document.createElement("tr");
       var studentName = document.createElement("td");
