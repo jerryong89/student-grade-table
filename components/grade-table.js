@@ -16,4 +16,7 @@ class GradeTable {
       document.getElementsByTagName("tbody")[0].appendChild(row);
     }
   }
+  onDeleteClick(deleteGrade){
+    this.deleteGrade = deleteGrade;
+  }
 }
