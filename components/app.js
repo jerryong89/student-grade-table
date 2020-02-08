@@ -35,7 +35,6 @@ class App {
     this.gradeForm.onSubmit(this.createGrade);
   }
   createGrade(name, course, grade) {
-    // console.log(name, course, grade);
     $.ajax({
       method: "POST",
       url: "http://sgt.lfzprototypes.com/api/grades",
