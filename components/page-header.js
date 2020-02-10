@@ -1,8 +1,9 @@
 class PageHeader {
-  constructor(headerElement){
+  constructor(headerElement) {
     this.headerElement = headerElement;
   }
-  updateAverage(newAverage){
-    document.querySelector("span").append(newAverage);
+  updateAverage(newAverage) {
+    $("spans").empty();
+    document.querySelector("spans").append(newAverage);
   }
 }
