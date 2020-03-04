@@ -16,10 +16,13 @@
     <div class="container">
       <div class="row">
         <h1 class="col-8">Student Grade Table</h1>
-        <h2 class="col-4">Average Grade <span class="badge badge-secondary"></span></h2>
+        <h2 class="col-4">Average Grade <spans class="badge badge-secondary"></spans>
+        </h2>
       </div>
     </div>
   </header>
+  <br>
+  <nav class="container border-bottom"></nav>
   <br>
   <div class="container">
     <div class="row">
@@ -29,36 +32,41 @@
             <th scope="col">Student Name</th>
             <th scope="col">Course</th>
             <th scope="col">Grade</th>
+            <th scope="col">Operation</th>
           </tr>
         </thead>
         <tbody>
         </tbody>
       </table>
+      <p class="col-5 d-none">No Grades Recorded</p>
       <div class="col-4">
         <form>
           <h3>
-          <label for="addgrade">Add Grade</label>
+            <label for="addgrade">Add Grade</label>
           </h3>
           <div class="input-group mb-3">
             <div class="input-group-prepend">
               <span class="input-group-text" id="basic-addon1"><i class="fas fa-user"></i></span>
             </div>
-            <input name="name" class="form-control" placeholder="Name" aria-label="Name" aria-describedby="basic-addon1">
+            <input name="name" class="form-control" placeholder="Name" aria-label="Name"
+              aria-describedby="basic-addon1">
           </div>
           <div class="input-group mb-3">
             <div class="input-group-prepend">
               <span class="input-group-text" id="basic-addon1"><i class="fas fa-file-alt"></i></span>
             </div>
-            <input name="course" class="form-control" placeholder="Course" aria-label="Course" aria-describedby="basic-addon1">
+            <input name="course" class="form-control" placeholder="Course" aria-label="Course"
+              aria-describedby="basic-addon1">
           </div>
           <div class="input-group mb-3">
             <div class="input-group-prepend">
               <span class="input-group-text" id="basic-addon1"><i class="fas fa-graduation-cap"></i></span>
             </div>
-            <input name="grade" class="form-control" placeholder="Grade" aria-label="Grade" aria-describedby="basic-addon1">
+            <input name="grade" class="form-control" placeholder="Grade" aria-label="Grade"
+              aria-describedby="basic-addon1">
           </div>
-            <button type="submit" class="btn btn-success">Add</button>
-            <button type="reset" class="btn btn-outline-secondary">Cancel</button>
+          <button type="submit" class="btn btn-success">Add</button>
+          <button type="reset" class="btn btn-outline-secondary">Cancel</button>
         </form>
       </div>
     </div>
